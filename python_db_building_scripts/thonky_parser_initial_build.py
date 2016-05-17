@@ -3,9 +3,7 @@ from bs4 import BeautifulSoup
 
 
 page = "http://www.thonky.com/animal-crossing-new-leaf/list-of-furniture"
-insertStatement1 = "UPDATE furniture SET img="
-insertStatement2 = " WHERE name=";
-insertStatement = insertStatement + " hha1, hha2, hha3, color1, color2, origin, ptval) VALUES ("
+insertStatement = "INSERT INTO furniture (name, ftype, purchase, sell, hha1, hha2, hha3, color1, color2, origin. ptval) VALUES ("
 
 response = urllib2.urlopen(page)
 html = response.read()
